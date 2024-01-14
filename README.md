@@ -7,3 +7,8 @@ Replit -> Shell ->
 ### Example URLs
 - [Image](https://samples-files.com/samples/Images/jpg/3840-2160-sample.jpg)
 - [100 MB file](https://ash-speed.hetzner.com/100MB.bin)
+### Screenshots
+#### Running program
+![Screenshot 1](img_1.png)
+#### File will appear in root dir
+![Screenshot 2](img_2.png)
