@@ -53,7 +53,7 @@ fn download(url: &str) -> Result<(), Box<dyn std::error::Error>> {
             total_size as f64 / 1_000_000.0,
             (part - last_part) as f64 / 1_000_000.0
         );
-        stdout().flush().unwrap();
+        stdout().flush()?;
         last_part = part;
         sleep(Duration::from_secs(1));
     }
