@@ -21,6 +21,7 @@ fn download(url: &str) -> Result<(), Box<dyn std::error::Error>> {
     let file = File::create(file_name)?;
 
     let total_size = response.content_length().unwrap_or(0);
+    println!("Total download size {:.2} MB ({})", total_size as f64 / 1_000_000.0, total_size);
     let downloaded = Arc::new(AtomicU64::new(0));
     let downloaded_clone = downloaded.clone();
 
